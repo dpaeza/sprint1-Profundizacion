@@ -229,7 +229,7 @@ const renderBigChat = async () => {
             otherUserImgProfile.src = part.url_profile_image;
             part.flagUser ? statusOtherUser.innerText = part.last_on_line : statusOtherUser.innerText = 'EN LINEA';
             part.message.forEach(msg => {
-                const source = msg.flag ? '.../icons/doubleCheckBlue.jpg' : '.../icons/doubleCheckGrey.jpg';
+                const source = msg.flag ? 'https://drive.google.com/file/d/1IcTRd55uKSGwoG-FP5S8oWHDBse6ehQi/view?usp=share_link' : 'https://drive.google.com/file/d/1oln-saz_iyn20vHYw8X3VUoUJg2tIs6z/view?usp=share_link';
                 if (msg.date != lastDateCompared) {
                     mainChat.innerHTML += `<span class="día">${compareDate(msg.date)}</span>`;
                     lastDateCompared = msg.date;

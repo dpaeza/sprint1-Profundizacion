@@ -229,7 +229,7 @@ const renderBigChat = async () => {
             otherUserImgProfile.src = part.url_profile_image;
             part.flagUser ? statusOtherUser.innerText = part.last_on_line : statusOtherUser.innerText = 'EN LINEA';
             part.message.forEach(msg => {
-                const source = msg.flag ? '../icons/doubleCheckBlue.jpg' : '../icons/doubleCheckGrey.jpg';
+                const source = msg.flag ? '.../icons/doubleCheckBlue.jpg' : '.../icons/doubleCheckGrey.jpg';
                 if (msg.date != lastDateCompared) {
                     mainChat.innerHTML += `<span class="día">${compareDate(msg.date)}</span>`;
                     lastDateCompared = msg.date;

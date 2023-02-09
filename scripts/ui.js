@@ -463,7 +463,7 @@ const renderMiniChats = async (filterChatsValue = '') => {
                     </div>
                     <div class="checkYp">
                         <div class="checkIcons">
-                            <img src="../icons/doubleCheckGrey.jpg" alt="check icon">
+                            <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACSElEQVR4nO2YPYhTQRSF4z+CiGhhYWEhglhZiBY2goKIFqsIIlhY2YidlprKVkklIcjccyYJMpV2WkhQsNrKQhS0cHdxQRBREBWNRgYXCeNsfrjrTYr5YLrvvZw7mXfnvalUCoVCoVAoTBcATgJ4S3JeRI6vlGuKiBwg+ZVkb2nMr4RriojsALDYF6wH4I3WNSWEsJHkbBLsF4CzGteUXq+3CkC7Pxj/hLuhcc0BcD0NRvJetVpdrXFNEZFTJH8ms/vce79Z45rinNsH4HMyu+9FZJfGNaXdbm8nOZcE++69P6xxTQkhrCf5OLPWL2pccwA0Ml3nptY1BcDVzOw+7HQ6azWuKQCOAegms/vSObdF45rinNsD4GMS7EOr1dqtcU1pNBpbAbxKgv3w3h/RuKbU6/V1AB5l1voljWsOyduZYHe0rikALmda55O4N2jcgcSvKwALcZCcqSgBcDSu7STcawDbNO5Qlgr4+3Bp3u1jd4ldJpndT977vRp37EI0xcQ+T/JFcq+u9/6Exh2ZuJzSv3fcYkIIa0g+yDywVzTu2IjImUwxXRE5P8r1JG9lHlhoXdNiSF7IBHtaq9U2aFzTYpxzh0h+S8LNxe8IjWtaTLPZ3AngXeJ9AbA/vec4rmkxIYRNJJ+NeIQzsvtfiD+U62be+3MA7mfW+rV0gwVwepBrBjLFLDPuxnOn3L40yJ22YmbjCWCfvzCqOzXFAFiMZ7HDNtjl3Ikg/zaAeBp+UOtOBJIz8Qg/jmHvReO4hUKhUChUJsxvDuxjrUm0xUgAAAAASUVORK5CYII=" alt="check icon">
                         </div>
                         <p>${chat.message[position].message}</p>
                     </div>
@@ -548,7 +548,7 @@ const renderMsgSearchBigChat = (filterChatValue) => {
                     <span>${ compareDate(msg.date) }</span>
                     <div class="div">
                         <div class="checkIcons">
-                            <img src="../icons/doubleCheckGrey.jpg" alt="check icon">
+                            <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACSElEQVR4nO2YPYhTQRSF4z+CiGhhYWEhglhZiBY2goKIFqsIIlhY2YidlprKVkklIcjccyYJMpV2WkhQsNrKQhS0cHdxQRBREBWNRgYXCeNsfrjrTYr5YLrvvZw7mXfnvalUCoVCoVAoTBcATgJ4S3JeRI6vlGuKiBwg+ZVkb2nMr4RriojsALDYF6wH4I3WNSWEsJHkbBLsF4CzGteUXq+3CkC7Pxj/hLuhcc0BcD0NRvJetVpdrXFNEZFTJH8ms/vce79Z45rinNsH4HMyu+9FZJfGNaXdbm8nOZcE++69P6xxTQkhrCf5OLPWL2pccwA0Ml3nptY1BcDVzOw+7HQ6azWuKQCOAegms/vSObdF45rinNsD4GMS7EOr1dqtcU1pNBpbAbxKgv3w3h/RuKbU6/V1AB5l1voljWsOyduZYHe0rikALmda55O4N2jcgcSvKwALcZCcqSgBcDSu7STcawDbNO5Qlgr4+3Bp3u1jd4ldJpndT977vRp37EI0xcQ+T/JFcq+u9/6Exh2ZuJzSv3fcYkIIa0g+yDywVzTu2IjImUwxXRE5P8r1JG9lHlhoXdNiSF7IBHtaq9U2aFzTYpxzh0h+S8LNxe8IjWtaTLPZ3AngXeJ9AbA/vec4rmkxIYRNJJ+NeIQzsvtfiD+U62be+3MA7mfW+rV0gwVwepBrBjLFLDPuxnOn3L40yJ22YmbjCWCfvzCqOzXFAFiMZ7HDNtjl3Ikg/zaAeBp+UOtOBJIz8Qg/jmHvReO4hUKhUChUJsxvDuxjrUm0xUgAAAAASUVORK5CYII=" alt="check icon">
                         </div>
                         <p>${msg.message}</p>
                     </div>

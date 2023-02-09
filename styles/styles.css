@@ -791,7 +791,7 @@ body {
   .homePage {
     height: 100vh;
     width: 100vw;
-    display: flex !important;
+    display: flex;
   }
   .leftSide {
     height: 100%;

@@ -65,10 +65,6 @@ let loque = 0;
 let pMsgBefore = '';
 let lastDateCompared;
 let newChat, idNewUser ;
-// let idMessages = 0;
-
-
-
 
 
 const sweetAlert = (text,icon='') => {
@@ -621,6 +617,7 @@ chatsBar.addEventListener('click', (e) => {
         if (window.innerWidth < 600) {
             rightSide.classList.remove('ocultar');
             leftSide.classList.add('hidden');
+            mainChat.scrollTop = mainChat.scrollHeight;
         }
     };
 });

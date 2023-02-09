@@ -195,7 +195,6 @@ body {
     .leftSide {
         width: 410px;
         height: 100%;
-        border: 2px solid rgb(0, 255, 13);
 
         .leftSide_EditProfile {
             background-color: #f3f3f3;
@@ -473,7 +472,6 @@ body {
   .rightSide {
     // width: 955px;
     width: 100%;
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
 
@@ -481,6 +479,7 @@ body {
       height: 60px;
       background-color: #ededed;
       padding-left: 15px;
+      border-left: 1px solid black;
       display: flex;
       align-items: center;
 
@@ -550,7 +549,6 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 1px solid red;
 
       main {
         height: 100%;
@@ -558,7 +556,6 @@ body {
         background-image: url(./img/wpp1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid black;
         padding: 15px 30px 15px 30px;
         display: flex;
         flex-direction: column;
@@ -738,7 +735,6 @@ body {
       footer {
         display: flex;
         background-color: #ededed;
-        border: 1px solid black;
         align-items: center;
         height: 60px;
         width: 100%;

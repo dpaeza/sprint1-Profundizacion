@@ -1,0 +1,821 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.formSignInContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./img/difu2.jpg");
+}
+.formSignInContainer div {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+.formSignInContainer h1 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.formSignInContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 30px 0px 30px 0px;
+}
+.formSignInContainer input {
+  width: 320px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #d9dbd5;
+  font-size: 16px;
+  outline: none;
+}
+.formSignInContainer input[type=number]::-webkit-inner-spin-button,
+.formSignInContainer input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formSignInContainer input:focus {
+  border-bottom: 1px solid #34b7f1;
+}
+.formSignInContainer button {
+  width: 320px;
+  height: 35px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-color: #34b7f1;
+  border: none;
+  cursor: pointer;
+}
+.formSignInContainer button:hover {
+  background-color: #1c91f1;
+}
+.formSignInContainer span {
+  font-weight: 700;
+  cursor: pointer;
+}
+.formSignInContainer span:hover {
+  color: #34b7f1;
+}
+
+.formSignUpContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./img/difu2.jpg");
+  padding: 10px;
+}
+.formSignUpContainer div {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+.formSignUpContainer h1 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.formSignUpContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 30px 0px 30px 0px;
+}
+.formSignUpContainer input {
+  width: 320px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #d9dbd5;
+  font-size: 16px;
+  outline: none;
+}
+.formSignUpContainer input[type=number]::-webkit-inner-spin-button,
+.formSignUpContainer input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formSignUpContainer input:focus {
+  border-bottom: 1px solid #34b7f1;
+}
+.formSignUpContainer textarea {
+  width: 320px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #d9dbd5;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+}
+.formSignUpContainer textarea:focus {
+  border: 1px solid #34b7f1;
+}
+.formSignUpContainer button {
+  width: 320px;
+  height: 35px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-color: #34b7f1;
+  border: none;
+  cursor: pointer;
+}
+.formSignUpContainer button:hover {
+  background-color: #1c91f1;
+}
+.formSignUpContainer span {
+  font-weight: 700;
+  cursor: pointer;
+}
+.formSignUpContainer span:hover {
+  color: #34b7f1;
+}
+
+.homePage {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.homePage .leftSide {
+  width: 410px;
+  height: 100%;
+  border: 2px solid rgb(0, 255, 13);
+}
+.homePage .leftSide .leftSide_EditProfile {
+  background-color: #f3f3f3;
+  width: 410px;
+  height: 100%;
+}
+.homePage .leftSide .leftSide_EditProfile header {
+  height: 110px;
+  background-color: #4ab39b;
+  display: flex;
+  padding: 70px 15px 0px 15px;
+  gap: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 12px;
+}
+.homePage .leftSide .leftSide_EditProfile header i {
+  cursor: pointer;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto {
+  height: 257px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i2.wp.com/erizos.mx/wp-content/uploads/2021/06/lohee-nina-coreana.jpg?resize=1280%2C1280&ssl=1);
+  background-size: cover;
+  cursor: pointer;
+  gap: 10px;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto img {
+  display: none;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto input {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  display: none;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto input::placeholder {
+  color: #ffffff;
+  text-align: center;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto input:focus {
+  outline: 1px solid #ffffff;
+  border: none;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto div:hover img {
+  display: flex;
+}
+.homePage .leftSide .leftSide_EditProfile .profilePhoto div:hover input {
+  display: flex;
+}
+.homePage .leftSide .leftSide_EditProfile .profileName {
+  min-height: 95px;
+  background-color: #ffffff;
+  padding: 20px 15px;
+}
+.homePage .leftSide .leftSide_EditProfile .profileName h3 {
+  color: #128c7e;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.homePage .leftSide .leftSide_EditProfile .profileName div {
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .leftSide .leftSide_EditProfile .profileName p {
+  font-weight: 700;
+  font-size: 17px;
+  max-width: 330px;
+}
+.homePage .leftSide .leftSide_EditProfile .profileName p:focus {
+  outline: 2px solid #bdbbbb;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+.homePage .leftSide .leftSide_EditProfile .profileName i {
+  cursor: pointer;
+}
+.homePage .leftSide .leftSide_Chats header {
+  height: 60px;
+  background-color: #ededed;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.homePage .leftSide .leftSide_Chats header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.homePage .leftSide .leftSide_Chats .allChatsTitle {
+  height: 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  display: none;
+  visibility: hidden;
+}
+.homePage .leftSide .leftSide_Chats .leftSide_search {
+  height: 60px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePage .leftSide .leftSide_Chats .leftSide_search div {
+  display: flex;
+  background-color: #ffffff;
+  align-self: center;
+  width: 355px;
+  height: 35px;
+  border-radius: 40px;
+  padding: 0px 35px 0px 35px;
+  align-items: center;
+  gap: 25px;
+}
+.homePage .leftSide .leftSide_Chats .leftSide_search div button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePage .leftSide .leftSide_Chats .leftSide_search div button img {
+  object-fit: contain;
+}
+.homePage .leftSide .leftSide_Chats .leftSide_search div input {
+  border: none;
+  width: 260px;
+  font-size: 16px;
+  outline: none;
+}
+.homePage .leftSide .leftSide_Chats #chatsBar {
+  height: 80vh;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.homePage .leftSide .leftSide_Chats #chatsBar::-webkit-scrollbar {
+  display: none;
+}
+.homePage .leftSide .leftSide_Chats hr {
+  color: #F2F2F2;
+  width: 85%;
+  align-self: center;
+  border: 0;
+  height: 0;
+  box-shadow: 0 1px 1.5px 1px rgb(197, 197, 199);
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0px 12px 0px 12px;
+  gap: 15px;
+  background-color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .profilePhotoChatBar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat {
+  width: 100%;
+  font-size: 15px;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .fechaYhora {
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .fechaYhora .nameMiniChat {
+  font-weight: 700;
+  font-size: 17px;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .fechaYhora .dayMiniChat {
+  color: #a2a2a2;
+  font-size: 12px;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .checkYp {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 5px;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .checkYp .checkIcons {
+  height: 15px;
+  display: flex;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .checkYp .checkIcons img {
+  height: 15px;
+  object-fit: contain;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar .chat .checkYp p {
+  width: 285px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  align-self: center;
+  color: #a2a2a2;
+}
+.homePage .leftSide .leftSide_Chats .chatMiniBar:hover {
+  background-color: #F2F2F2;
+}
+.homePage .rightSide {
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.homePage .rightSide header {
+  height: 60px;
+  background-color: #ededed;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.homePage .rightSide header i {
+  margin-right: 10px;
+  display: none;
+  visibility: hidden;
+}
+.homePage .rightSide header i img {
+  width: 20px;
+  height: 20px;
+}
+.homePage .rightSide header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.homePage .rightSide header .divRightSide {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 0px 15px;
+}
+.homePage .rightSide header .divRightSide .nameBigChat {
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+.homePage .rightSide header .divRightSide div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.homePage .rightSide header .divRightSide .status {
+  color: #a2a2a2;
+  font-size: 13px;
+}
+.homePage .rightSide header .divRightSide button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+}
+.homePage .rightSide header .divRightSide button img {
+  object-fit: contain;
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+.homePage .rightSide .mainYfooter {
+  height: 90.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.homePage .rightSide .mainYfooter main {
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/wpp1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.homePage .rightSide .mainYfooter main .día {
+  height: 30px;
+  background-color: #e5f2fa;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+  align-self: center;
+}
+.homePage .rightSide .mainYfooter main .messageReceived {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 3px;
+  color: #000000;
+  align-self: flex-start;
+}
+.homePage .rightSide .mainYfooter main .messageReceived .fakeInput {
+  max-width: 480px;
+  word-wrap: break-word;
+}
+.homePage .rightSide .mainYfooter main .messageReceived div {
+  display: flex;
+}
+.homePage .rightSide .mainYfooter main .messageReceived .space {
+  width: 25px;
+  color: rgba(0, 0, 0, 0);
+}
+.homePage .rightSide .mainYfooter main .messageReceived span {
+  align-self: flex-end;
+  font-size: 12px;
+  color: #a2a2a2;
+}
+.homePage .rightSide .mainYfooter main .messageReceived div::before {
+  content: "";
+  display: block;
+  position: relative;
+  color: #000000;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #ffffff;
+  border-right: 8px solid #ffffff;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-top-left-radius: 4px;
+  top: -5px;
+  left: -15px;
+}
+.homePage .rightSide .mainYfooter main .messageSendedContainer {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.homePage .rightSide .mainYfooter main .messageSended {
+  background-color: #e1f7cb;
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 3px;
+  color: #000000;
+  align-self: flex-end;
+}
+.homePage .rightSide .mainYfooter main .messageSended .fakeInput {
+  max-width: 480px;
+  word-wrap: break-word;
+}
+.homePage .rightSide .mainYfooter main .messageSended .mm {
+  display: flex;
+}
+.homePage .rightSide .mainYfooter main .messageSended p {
+  padding: 0px 0px;
+}
+.homePage .rightSide .mainYfooter main .messageSended .arrow {
+  position: relative;
+  top: -5px;
+  right: -15px;
+  visibility: hidden;
+  cursor: pointer;
+}
+.homePage .rightSide .mainYfooter main .messageSended .divHyC {
+  display: flex;
+  align-self: flex-end;
+  gap: 3px;
+}
+.homePage .rightSide .mainYfooter main .messageSended span {
+  align-self: flex-end;
+  font-size: 12px;
+  color: #a2a2a2;
+}
+.homePage .rightSide .mainYfooter main .messageSended .checkIconBlue {
+  width: 15px;
+  height: 15px;
+}
+.homePage .rightSide .mainYfooter main .messageSended .imgIconCheck {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+.homePage .rightSide .mainYfooter main .messageSended .mm::after {
+  content: "";
+  display: block;
+  position: relative;
+  color: #000000;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #e1f7cb;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #e1f7cb;
+  border-top-right-radius: 4px;
+  top: -5px;
+  right: -15px;
+}
+.homePage .rightSide .mainYfooter main .messageSended:hover .arrow {
+  visibility: visible;
+}
+.homePage .rightSide .mainYfooter main .desplegMenu {
+  list-style: none;
+  border: 1px solid black;
+  width: 100px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  align-self: flex-end;
+  float: left;
+}
+.homePage .rightSide .mainYfooter main .desplegMenu li {
+  padding: 5px;
+}
+.homePage .rightSide .mainYfooter main .desplegMenu li:hover {
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+.homePage .rightSide .mainYfooter main::-webkit-scrollbar {
+  display: none;
+}
+.homePage .rightSide .mainYfooter footer {
+  display: flex;
+  background-color: #ededed;
+  border: 1px solid black;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0px 15px;
+  gap: 5px;
+  justify-content: space-between;
+}
+.homePage .rightSide .mainYfooter footer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.homePage .rightSide .mainYfooter footer form {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+.homePage .rightSide .mainYfooter footer input {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  height: 35px;
+  border-radius: 40px;
+  padding: 0px 15px;
+}
+
+.fixedBarSearch {
+  position: fixed;
+  width: 410px;
+  height: 100%;
+  right: 0px;
+  background-color: #F3F3F3;
+  z-index: 1000;
+}
+.fixedBarSearch header {
+  height: 50px;
+  background-color: #F1EEF1;
+  padding: 0px 30px;
+  gap: 35px;
+  display: flex;
+  align-items: center;
+}
+.fixedBarSearch i {
+  cursor: pointer;
+}
+.fixedBarSearch h4 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+}
+.fixedBarSearch .leftSide_search {
+  height: 60px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixedBarSearch .leftSide_search div {
+  display: flex;
+  background-color: #ffffff;
+  align-self: center;
+  width: 355px;
+  height: 35px;
+  border-radius: 40px;
+  padding: 0px 35px 0px 35px;
+  align-items: center;
+  gap: 25px;
+}
+.fixedBarSearch .leftSide_search div button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixedBarSearch .leftSide_search div button img {
+  object-fit: contain;
+}
+.fixedBarSearch .leftSide_search div input {
+  border: none;
+  width: 260px;
+  font-size: 16px;
+  outline: none;
+}
+.fixedBarSearch .searchResult {
+  min-height: 72px;
+  background-color: #ffffff;
+  padding: 15px;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #E9EDEF;
+}
+.fixedBarSearch .searchResult span {
+  font-size: 12px;
+}
+.fixedBarSearch .searchResult .div {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+}
+.fixedBarSearch .searchResult .checkIcons {
+  height: 15px;
+  display: flex;
+}
+.fixedBarSearch .searchResult .checkIcons img {
+  height: 15px;
+  object-fit: contain;
+}
+.fixedBarSearch .searchResult p {
+  font-size: 16px;
+  color: #000000;
+}
+.fixedBarSearch .searchResult:hover {
+  background-color: #F5F6F6;
+}
+.fixedBarSearch .searchResultContainer {
+  overflow: scroll;
+  height: 82.2%;
+}
+.fixedBarSearch .searchResultContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.ocultar {
+  display: flex;
+  visibility: visible;
+}
+
+@media screen and (max-width: 380px) {
+  .formSignInContainer input {
+    width: 280px;
+  }
+  .formSignInContainer button {
+    width: 280px;
+  }
+  .formSignUpContainer input {
+    width: 280px;
+  }
+  .formSignUpContainer textarea {
+    width: 280px;
+  }
+  .formSignUpContainer button {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ocultar {
+    display: none !important;
+    visibility: hidden;
+  }
+  .rightSide i {
+    display: flex !important;
+    visibility: visible !important;
+  }
+  .homePage {
+    height: 100vh;
+    width: 100vw;
+    display: flex !important;
+  }
+  .leftSide {
+    height: 100%;
+    width: 100% !important;
+  }
+  .allChatsTitle {
+    display: flex !important;
+    visibility: visible !important;
+  }
+  .leftSide_EditProfile {
+    width: 100% !important;
+    height: 100%;
+  }
+  .fixedBarSearch {
+    width: 100%;
+    height: 100%;
+  }
+  .chatMiniBar .checkYp p {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

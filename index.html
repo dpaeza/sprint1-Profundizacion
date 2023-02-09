@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <title>💬Sprint 1 Profundización</title>
+	</head>
+    <body>
+        <!-- SIGN IN PAGE -->
+        <section class="formSignInContainer" id="formSignInContainer">
+            <div>
+                <h1>Iniciar sesión</h1>
+                <form id="formSignIn">
+                    <input type="number" placeholder="Número de celular" id="logInNumber" />
+                    <input type="password" placeholder="Contraseña" id="logInPassword" />
+                    <button>Ingresar</button>
+                </form>
+                <p>¿No tienes cuenta? <span id="signUpFree">Registrate gratis</span></p>
+            </div>
+        </section>
+
+        <!-- SIGN UP PAGE -->
+        <section class="formSignUpContainer hidden" id="formSignUpContainer">
+            <div>
+                <h1>Crear cuenta</h1>
+                <form id="formSignUp">
+                    <input type="text" placeholder="Nombre" id="signUpName" />
+                    <input type="number" placeholder="Número de celular" id="signUpNumber" />
+                    <input type="password" placeholder="Contraseña" id="signUpPassword" />
+                    <input type="url" placeholder="url imagen de perfil" id="signUpImg" />
+                    <textarea id="signUpPhrase" cols="30" rows="5" placeholder="Frase"></textarea>
+                    <button>Crear</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- HOME PAGE -->
+        <section class="homePage hidden" id="homePage">
+        <!-- LATERAL IZQUIERDO -->
+            <section class="leftSide" id="leftSide">
+                <section id="leftSide_EditProfile" class="leftSide_EditProfile hidden">
+                    <header>
+                        <i id="arrorLeft"><img src="./icons/arrow-left.svg" alt="arrow left icon" ></i>
+                        <h2>Perfil</h2>
+                    </header>
+                    <section class="profilePhoto">
+                        <div id="imgProfileUserBig">
+                            <figure><img src="./icons/camera.svg" alt="camera icon"></figure>
+                            <form id="formImgProfile">
+                                <input type="url" placeholder="Cambiar Imagen" id="inputImgProfile">
+                            </form>
+                        </div>
+                    </section>
+                    <section class="profileName">
+                        <h3>Tu nombre</h3>
+                        <div>
+                            <p id="nameUser"></p>
+                            <i><img src="./icons/edit-2.svg" alt="pencil-edit icon" id="editUserName"></i>
+                        </div>
+                    </section>
+                </section>
+                <section id="leftSide_Chats" class="leftSide_Chats"> 
+                    <header>
+                        <figure id="imgProfileMini">
+                            <img src="" alt="Image Profile" id="imgProfileUser"/>
+                        </figure>
+                    </header>
+                    <section class="allChatsTitle"> 
+                        Todos los Chats
+                    </section>
+                    <section class="leftSide_search">
+                        <div>
+                            <button type="button">
+                                <img src="./icons/search.svg" alt="search icon" />
+                            </button>
+                            <form id="formInputFilterMiniChats">
+                                <input type="text" placeholder="Buscar o iniciar un nuevo chat" id="inputFilterMiniChats"/>
+                            </form>
+                        </div>
+                    </section>
+                    <section id="chatsBar">
+                    </section>
+                </section>
+            </section>
+            <!-- LATERAL DERECHO -->
+            <section class="rightSide ocultar" id="rightSide">
+                <header>
+                    <i class="arrowHeaderMain" id="arrowHeaderMain"><img src="./icons/arrow-left-55-black.svg" alt="arrorLeft"></i>
+                    <img src="" alt="user img" id="otherUserImgProfile">
+                    <div class="divRightSide">
+                        <div>
+                            <h1 class="nameBigChat" id="nameBigChat"></h1>
+                            <p class="status" id="statusOtherUser"></p>
+                        </div>
+                        <button type="button" id="searchInConversation"><img src="./icons/search.svg" alt="serach icon"></button>
+                    </div>
+                </header>
+                <div class="mainYfooter">
+                    <main id="mainChat">
+                    </main>
+                    <footer>
+                        <button>
+                            <img src="./icons/smile.svg" alt="smile icon">
+                        </button>
+                        <button>
+                            <img src="./icons/paperclip.svg" alt="paperclip icon">
+                        </button>
+                        <form id="formSendMsg">
+                            <input type="text" placeholder="Escribe un mensaje" id="inputFormSendNsg">
+                            <button>
+                                <img src="./icons/mic.svg" alt="mic icon" id="micAndSend">
+                            </button>
+                        </form>
+                        
+                    </footer>
+                </div>
+            </section>
+            <section class="fixedBarSearch hidden" id="fixedBarSearch">
+                <header>
+                    <i id="XfixedBarSearch"><img src="./icons/x.svg" alt="x icon"></i>
+                    <h4>Mensajes con <span id="name">Josefa</span></h4>
+                </header>
+                <section class="leftSide_search">
+                    <div>
+                        <button type="button">
+                            <img src="./icons/search.svg" alt="search icon" />
+                        </button>
+                        <form>
+                            <input type="text" placeholder="Buscar..." id="inputFilterBigChat" />
+                        </form>
+                    </div>
+                </section>
+                <section class="searchResultContainer" id="searchResultContainer">
+                </section>
+            </section>
+        </section>
+
+        <script src="./main.js" type="module"></script>
+    </body>
+</html>
